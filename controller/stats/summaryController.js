@@ -43,6 +43,7 @@ router.get('/:type/:id', function(req, res, next) {
 	var type = req.params.type;
 	/*  compute delay	*/
 	var d = new Date;
+	d.setTimezoned('Asia/Manila');
 	var t = d.getHours();
 	var m = d.getMinutes();
 
